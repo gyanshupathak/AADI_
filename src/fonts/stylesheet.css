@@ -1,0 +1,208 @@
+@font-face {
+    font-family: 'Mello';
+    src: url('Mello-Black.eot');
+    src: local('Mello Black'), local('Mello-Black'),
+        url('Mello-Black.eot?#iefix') format('embedded-opentype'),
+        url('Mello-Black.woff2') format('woff2'),
+        url('Mello-Black.woff') format('woff'),
+        url('Mello-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mello Book';
+    src: url('Mello-Book.eot');
+    src: local('Mello Book'), local('Mello-Book'),
+        url('Mello-Book.eot?#iefix') format('embedded-opentype'),
+        url('Mello-Book.woff2') format('woff2'),
+        url('Mello-Book.woff') format('woff'),
+        url('Mello-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mello';
+    src: url('Mello-BoldItalic.eot');
+    src: local('Mello Bold Italic'), local('Mello-BoldItalic'),
+        url('Mello-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Mello-BoldItalic.woff2') format('woff2'),
+        url('Mello-BoldItalic.woff') format('woff'),
+        url('Mello-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mello';
+    src: url('Mello-Bold.eot');
+    src: local('Mello Bold'), local('Mello-Bold'),
+        url('Mello-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Mello-Bold.woff2') format('woff2'),
+        url('Mello-Bold.woff') format('woff'),
+        url('Mello-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mello Book';
+    src: url('Mello-BookItalic.eot');
+    src: local('Mello Book Italic'), local('Mello-BookItalic'),
+        url('Mello-BookItalic.eot?#iefix') format('embedded-opentype'),
+        url('Mello-BookItalic.woff2') format('woff2'),
+        url('Mello-BookItalic.woff') format('woff'),
+        url('Mello-BookItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mello';
+    src: url('Mello-BlackItalic.eot');
+    src: local('Mello Black Italic'), local('Mello-BlackItalic'),
+        url('Mello-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('Mello-BlackItalic.woff2') format('woff2'),
+        url('Mello-BlackItalic.woff') format('woff'),
+        url('Mello-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mello Super';
+    src: url('Mello-SuperItalic.eot');
+    src: local('Mello Super Italic'), local('Mello-SuperItalic'),
+        url('Mello-SuperItalic.eot?#iefix') format('embedded-opentype'),
+        url('Mello-SuperItalic.woff2') format('woff2'),
+        url('Mello-SuperItalic.woff') format('woff'),
+        url('Mello-SuperItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mello';
+    src: url('Mello-Thin.eot');
+    src: local('Mello Thin'), local('Mello-Thin'),
+        url('Mello-Thin.eot?#iefix') format('embedded-opentype'),
+        url('Mello-Thin.woff2') format('woff2'),
+        url('Mello-Thin.woff') format('woff'),
+        url('Mello-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mello Extra';
+    src: url('Mello-ExtraLightItalic.eot');
+    src: local('Mello Extra Light Italic'), local('Mello-ExtraLightItalic'),
+        url('Mello-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Mello-ExtraLightItalic.woff2') format('woff2'),
+        url('Mello-ExtraLightItalic.woff') format('woff'),
+        url('Mello-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mello';
+    src: url('Mello-ThinItalic.eot');
+    src: local('Mello Thin Italic'), local('Mello-ThinItalic'),
+        url('Mello-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('Mello-ThinItalic.woff2') format('woff2'),
+        url('Mello-ThinItalic.woff') format('woff'),
+        url('Mello-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mello';
+    src: url('Mello-LightItalic.eot');
+    src: local('Mello Light Italic'), local('Mello-LightItalic'),
+        url('Mello-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Mello-LightItalic.woff2') format('woff2'),
+        url('Mello-LightItalic.woff') format('woff'),
+        url('Mello-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mello';
+    src: url('Mello-Light.eot');
+    src: local('Mello Light'), local('Mello-Light'),
+        url('Mello-Light.eot?#iefix') format('embedded-opentype'),
+        url('Mello-Light.woff2') format('woff2'),
+        url('Mello-Light.woff') format('woff'),
+        url('Mello-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mello Extra';
+    src: url('Mello-ExtraLight.eot');
+    src: local('Mello Extra Light'), local('Mello-ExtraLight'),
+        url('Mello-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('Mello-ExtraLight.woff2') format('woff2'),
+        url('Mello-ExtraLight.woff') format('woff'),
+        url('Mello-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mello';
+    src: url('Mello-Medium.eot');
+    src: local('Mello Medium'), local('Mello-Medium'),
+        url('Mello-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Mello-Medium.woff2') format('woff2'),
+        url('Mello-Medium.woff') format('woff'),
+        url('Mello-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mello';
+    src: url('Mello-MediumItalic.eot');
+    src: local('Mello Medium Italic'), local('Mello-MediumItalic'),
+        url('Mello-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('Mello-MediumItalic.woff2') format('woff2'),
+        url('Mello-MediumItalic.woff') format('woff'),
+        url('Mello-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mello Super';
+    src: url('Mello-Super.eot');
+    src: local('Mello Super'), local('Mello-Super'),
+        url('Mello-Super.eot?#iefix') format('embedded-opentype'),
+        url('Mello-Super.woff2') format('woff2'),
+        url('Mello-Super.woff') format('woff'),
+        url('Mello-Super.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
