@@ -13,7 +13,7 @@ import leaderboard from '../assets/svg/leaderboard.svg';
 
 const Contests = () => {
   return (
-    <div className="pt-[6rem] -mt-[2.75rem]  bg-n-8">
+    <div className="pt-[6rem] mt-[14.75rem]  bg-n-8">
       <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -45,7 +45,7 @@ const Contests = () => {
           <img src={people1} alt="people" className="w-full h-full" />
         </div>
 
-        <div className="absolute bottom-60 right-60 w-[500px] h-[500px] p-[6px] rounded-full ">
+        <div className="absolute bottom-40 right-60 w-[700px] h-[700px] p-[6px] rounded-full ">
           <img src={leaderboard} alt="people" className="w-full h-full" />
         </div>
 

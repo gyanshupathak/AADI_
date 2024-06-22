@@ -1,7 +1,7 @@
 const PlayGames = ({ imgUrl, title, subtitle }) => (
   <div className="flex-1  items-start flex flex-col sm:max-w-[250px] min-w-[210px] m-2">
     <div
-      className={`flex justify-center items-center w-[70px] h-[70px] rounded-[24px] bg-n-8`}
+      className={`flex justify-center items-center w-[70px] h-[70px] rounded-[24px] bg-purple-500`}
     >
       <img src={imgUrl} alt="icon" className="w-1/2  object-contain" />
     </div>

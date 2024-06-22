@@ -48,7 +48,7 @@ export const navigation = [
 export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 export const startingFeatures = [
   'Create an Aadi account',
-  'Upon creating an account receive a joining bonus in AADI tokens',
+  'Win joining bonus in Aadi tokens',
   
 ];
 

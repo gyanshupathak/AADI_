@@ -27,7 +27,7 @@ const Hero = () => {
       <div className="container relative text-center" ref={parallaxRef}>
         <div className="relative z-1 animate-fadeInUp max-w-[62rem] mx-auto text-center text-white mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
           <h1 className="h1 mb-6 font-sans font-bold text-8xl  ">
-            PLAY TO EARN REAL REWARDS! 
+            PLAY TO EARN REAL <span className="text-purple-500">REWARDS! </span>
           </h1> 
           <p className="body-1 font-sans max-w-xl mx-auto mt-15 text-n-2 text-4xl font-normal lg:mb-8">
           Gaming Assets to Money in your Wallet  
