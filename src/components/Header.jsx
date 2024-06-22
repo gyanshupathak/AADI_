@@ -5,7 +5,6 @@ import  logo  from "../assets/svg/logo.svg";
 import { navigation } from "../constants";
 import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
-import { HamburgerMenu } from "./design/Header";
 import { useState } from "react";
 
 const Header = () => {
@@ -42,16 +41,16 @@ const Header = () => {
 
         <nav
           className={`${
-            openNavigation ? "flex" : "hidden"
-          } fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex  lg:bg-transparent lg:ml-auto`}
+            openNavigation ? "flex justify-center" : "hidden"
+          } fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:bg-transparent lg:ml-auto`}
         >
-          <div className="relative font-sans  z-2 flex flex-col  justify-center  lg:flex-row ">
+          <div className="relative font-sans z-2 flex flex-col justify-center items-center lg:flex-row ">
             {navigation.map((item) => (
               <a
                 key={item.id}
                 href={item.url}
                 onClick={handleClick}
-                className={`block relative font-sans font-bold text-3xl  text-n-1 sm:text-black transition-colors hover:text-color-1 ${
+                className={`block relative font-sans font-bold text-3xl text-n-1 sm:text-black transition-colors hover:text-color-1 text-center ${
                   item.onlyMobile ? "lg:hidden" : ""
                 } px-6 py-6 md:py-8 lg:-mr-12 lg:text-sm lg:font-semibold ${
                   item.url === pathname.hash
@@ -68,7 +67,6 @@ const Header = () => {
           </div>
           
 
-          <HamburgerMenu />
         </nav>
 
         

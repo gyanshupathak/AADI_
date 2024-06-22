@@ -36,8 +36,8 @@ const GettingStarted = () => {
               />
             </div>
 
-            <div className="relative z-1  max-w-[20rem] ml-auto mr-36">
-              <h4 className="h4 mb-4 text-white font-sans text-6xl font-bold ">Marketplaces</h4>
+            <div className="relative z-1  top-[10rem] lg:top-[-10rem] max-w-[20rem] lg:ml-auto lg:mr-36">
+              <h4 className="h4 mb-4 text-white font-sans text-4xl lg:text-6xl font-bold ">Marketplaces</h4>
               <p className="body-2 mb-[3rem] text-white">
               Use Aadi tokens to buy :
               </p>
