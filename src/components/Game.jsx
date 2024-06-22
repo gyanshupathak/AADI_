@@ -21,13 +21,13 @@ const GettingStarted = () => {
           >
             <motion.div
               variants={fadeIn('up', 'tween', 0.2, 1)}
-              className=" ml-16 flex-[0.95] flex justify-center  flex-col"
+              className=" lg:ml-16 flex-[0.95] flex justify-center  flex-col"
             >
-            <div className="relative z-1  max-w-[62rem] mx-auto text-center text-white mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
-              <h1 className="h1 mb-6 font-sans font-bold text-8xl  ">
+            <div className="relative z-1  max-w-[24rem] lg:max-w-[62rem] mx-auto text-center text-white mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
+              <h1 className="h1 mb-6 font-sans font-bold  lg:text-8xl  ">
                 GET LOST IN THESE<span className='text-purple-500'> WORLDS</span> TO GET YOUR <span className='text-purple-500'>AADI</span>! 
               </h1> 
-              <p className="body-1 font-sans max-w-xl mx-auto mt-15 text-n-2 text-4xl font-normal lg:mb-8">
+              <p className="body-1 font-sans max-w-xl mx-auto mt-15 text-n-2 text-2xl lg:text-4xl font-normal lg:mb-8">
               Aadi is in <span className='text-purple-500'>beta</span>. It is live on 10+ games, with more games being added frequently 
               </p>
             </div>

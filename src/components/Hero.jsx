@@ -15,9 +15,35 @@ import playbutton from "../assets/Playbutton.png";
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
 import { staggerContainer } from "../utils/motion";
+import { useState, useEffect } from 'react';
+
+
+
+function useWindowSize() {
+  const [windowSize, setWindowSize] = useState({
+    width: undefined,
+  });
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowSize({
+        width: window.innerWidth,
+      });
+    }
+    
+    window.addEventListener('resize', handleResize);
+    handleResize(); 
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  return windowSize;
+}
+
 
 const Hero = () => {
   const parallaxRef = useRef(null);
+  const { width } = useWindowSize();
 
   return (
     <div
@@ -26,10 +52,10 @@ const Hero = () => {
     >
       <div className="container relative text-center" ref={parallaxRef}>
         <div className="relative z-1 animate-fadeInUp max-w-[62rem] mx-auto text-center text-white mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
-          <h1 className="h1 mb-6 font-sans font-bold text-8xl  ">
+          <h1 className="h1 mb-6 font-sans font-bold text-6xl sm:text-xl md:text-6xl lg:text-8xl">
             PLAY TO EARN REAL <span className="text-purple-500">REWARDS! </span>
           </h1> 
-          <p className="body-1 font-sans max-w-xl mx-auto mt-15 text-n-2 text-4xl font-normal lg:mb-8">
+          <p className="body-1 font-sans max-w-xl mx-auto mt-5 lg:mt-15 text-n-2 text-xl font-normal lg:mb-8 lg:text-4xl">
           Gaming Assets to Money in your Wallet  
           </p>
         </div>
@@ -38,7 +64,7 @@ const Hero = () => {
             <div className="relative bg-n-8 rounded-[1rem]">
               <div className="">
                 <ScrollParallax isAbsolutelyPositioned> 
-                <div className="relative -top-40 left-1/2 transform -translate-x-1/2 w-[60%]">
+                <div className="relative mt-[-8rem]  lg:-top-50 left-1/2 transform -translate-x-1/2 lg:w-[60%]">
                   <img src={tokens} alt="image" className=" ml-5 " />
                 </div>
                 </ScrollParallax>
@@ -46,11 +72,10 @@ const Hero = () => {
             </div>
 
           </div>
-          <div className="relative bottom-80 right-36 w-[120%]">
+          <div className="relative right-[2.5rem] top-[-7rem] lg:bottom-80 lg:right-36 w-[120%]">
             <img src={ellipse} alt="ellipse" />
           </div>  
-          <BackgroundCircles />
-                  
+          {width >= 1024 && <BackgroundCircles />}                  
         </div>
         
         <div className="relative  font-sans w-fi z-1 text-center text-white mb-[3.875rem] md:mb-20 ">
@@ -74,24 +99,24 @@ const Hero = () => {
                 <img
                   src={playbutton}
                   alt="get-started"
-                  className="relative top-[-25rem] left-[15rem] w-[20%] h-[20%] object-contain "
+                  className="relative top-[-20.5rem] left-[11rem] lg:top-[-25rem] lg:left-[15rem] w-[20%] h-[20%] object-contain "
                 />
               </motion.div>
               <motion.div
                 variants={fadeIn('left', 'tween', 0.2, 1)}
                 className="flex-[0.75] flex justify-center items-start flex-col "
               >
-                <div className="relative text-left top-[-11.25rem] left-[2rem]" >
-                  <h1 className="h1 mb-6 font-sans font-bold text-white text-6xl ">
-                    LEVELLING UP GAMING! 
+                <div className="relative lg:text-left top-[-11.25rem] lg:left-[2rem]" >
+                  <h1 className="h1 mb-6 font-sans text:4xl font-bold text-white lg:text-6xl ">
+                    LEVELLING UP <span className="text-purple-500">GAMING!</span>
                   </h1> 
-                  <p className="body-1 font-sans max-w-xl  mt-15 text-n-2 text-4xl font-normal lg:mb-8">
+                  <p className="body-1 font-sans max-w-xl  mt-15 text-n-2 text-2xl lg:text-4xl font-normal lg:mb-8">
                     Welcome to AADI!  
                   </p>
-                  <p className="body-1 font-sans max-w-xl  text-n-2 text-4xl font-normal lg:mb-8">
+                  <p className="body-1 font-sans max-w-xl  text-n-2 text-2xl lg:text-4xl font-normal lg:mb-8">
                     Get rewards for playing fun games!  
                   </p>
-                  <Button className="hidden font-sans text-sm lg:inline-flex mt-8" href="#login">
+                  <Button className="font-sans mt-6  text-sm lg:inline-flex lg:mt-8" href="#login">
                     Join The Waitlist
                   </Button>
                 

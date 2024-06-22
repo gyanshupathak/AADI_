@@ -15,7 +15,7 @@ const FAQ = () => {
 
   return (
     <div className="w-full font-sans pt-[12rem] -mt-[2.75rem]  bg-n-8">
-      <div className="max-w-4xl  mx-auto py-20 px-4">
+      <div className=" lg:max-w-4xl mx-auto py-20 px-4">
         <TypingText title="| FREQUENTLY ASKED QUESTIONS" />
         <TitleText title={<>QUESTIONS ? </>} />
         <TitleText title={<>WE'VE GOT ANSWERS </>} />
